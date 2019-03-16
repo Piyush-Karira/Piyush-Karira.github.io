@@ -91,22 +91,25 @@ body.border-dark .menu-btn > .lines > span{
 	top:0;
 	right:0;
 	height:100%;
+	visibility: visible;
 	width:0;
 	-webkit-transition:width .6s cubic-bezier(.785,.135,.15,.86);
 	-moz-transition:width .6s cubic-bezier(.785,.135,.15,.86);
 	transition:width .6s cubic-bezier(.785,.135,.15,.86);
 	overflow:hidden;
 }
-.menu:hover,
-.menu-btn:hover + .menu{
-	width:300px;
-}
 
-.closebtn{
-	margin:6px 0;
-	font-size: 10px;
-	margin:6px 0;
-	}
+
+
+#x {
+ 
+    float: right;
+    background: Transparent;
+	color: white;
+    position:absolute;
+     top:0;
+     right:0;
+}
 
 .menu > .inner{
 	height:100%;

@@ -21,7 +21,7 @@
 		<link rel='stylesheet' type='text/css' href='css/style.css' >
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
-	<body>
+	<body >
 		
 		
 		<!--=====================================================
@@ -63,6 +63,9 @@
 			=====================================================-->
 			<div class='menu' id="mySidenav">
 				<div class='inner' >
+					<button id = "x" onclick="closeNav()">
+            					<h3>X</h3>
+        			</button>
 					<ul class='menu-items' >
 						<li>
 							<a href='#' class='section-toggle' data-section='intro'  onclick="closeNav()">
@@ -103,11 +106,22 @@
 
 
 			<script>
+					$(document).ready(function(){
+					  $("btn").hover(function(){
+					    $(this).css("width", "300px");
+					    }, function(){
+					    $(this).css("width", "0px");
+					  });
+					});
+
+
 			function openNav() {
+				document.getElementById("btn").style.visibility = "hidden";
 				document.getElementById("mySidenav").style.width = "300px";
 			}
 			function closeNav() {
 			  document.getElementById("mySidenav").style.width = "0px";
+			  document.getElementById("btn").style.visibility = "visible";
 			}
 			</script>
 
