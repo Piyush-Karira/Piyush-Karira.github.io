@@ -62,6 +62,7 @@ $(function(){
 				setTimeout(function(){
 					$('body').removeClass('section-switching up down');			
 				}, 2500);
+
 				setTimeout(function(){
 					current_sect.removeClass('active');
 					sect.addClass('active');
@@ -72,6 +73,7 @@ $(function(){
 					$('body').removeClass('border-dark');
 				}
 			}
+
 		}
 	});
 	

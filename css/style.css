@@ -98,8 +98,9 @@ body.border-dark .menu-btn > .lines > span{
 }
 .menu:hover,
 .menu-btn:hover + .menu{
-	width:300px;
+	width:250px;
 }
+
 .menu > .inner{
 	height:100%;
 	width:300px;
@@ -114,7 +115,7 @@ body.border-dark .menu-btn > .lines > span{
 	position:absolute;
 	width:100%;
 	top:50%;
-	left:0;
+	left:0%;
 	-webkit-transform:translateY(-50%);
 	-moz-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
@@ -129,9 +130,9 @@ body.border-dark .menu-btn > .lines > span{
 	font-weight:700;
 	text-decoration:none;
 	text-transform:uppercase;
-	letter-spacing:4px;
+	letter-spacing:3px;
 	padding:10px 0;
-	margin:2px 0;
+	margin:3px 0;
 	display:block;
 	-webkit-transition:color .3s cubic-bezier(.785,.135,.15,.86);
 	-moz-transition:color .3s cubic-bezier(.785,.135,.15,.86);
@@ -265,8 +266,8 @@ body.border-dark .main-content:after{
 	color:#FFF;
 	text-transform:uppercase;
 	font-weight:900;
-	letter-spacing:7px;
-	font-size:78px;
+	letter-spacing:4px;
+	font-size:70px;
 }
 .intro-text > p{
 	font-size:20px;
@@ -347,7 +348,7 @@ a.btn-custom{
 	background:#283747;
 }
 .btn-custom.btn-color:hover:after{
-	opacity:.4;
+	opacity:.6;
 }
 .btn-custom.btn-color{
 	color:#202020;
