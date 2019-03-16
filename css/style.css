@@ -79,6 +79,7 @@ img{
 =======================================================*/
 body.border-dark .menu-btn > .lines > span{
 	background:#283747;
+	visibility: visible;
 }
 .menu-btn > .lines > .l2{
 	margin:6px 0;
@@ -100,6 +101,12 @@ body.border-dark .menu-btn > .lines > span{
 .menu-btn:hover + .menu{
 	width:300px;
 }
+
+.closebtn{
+	margin:6px 0;
+	font-size: 10px;
+	margin:6px 0;
+	}
 
 .menu > .inner{
 	height:100%;

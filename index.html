@@ -19,7 +19,7 @@
 		<link rel='stylesheet' type='text/css' href='css/owl.carousel.css' >
 		<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
 		<link rel='stylesheet' type='text/css' href='css/style.css' >
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
 		
@@ -49,8 +49,8 @@
 			<!--=====================================================
 				Menu Button
 			=====================================================-->
-			<a href='#' class='menu-btn' >
-				<span class='lines' >
+			<a href='#' class='menu-btn' id="btn" onclick="openNav()">
+				<span class='lines'>
 					<span class='l1' ></span>
 					<span class='l2' ></span>
 					<span class='l3' ></span>
@@ -61,37 +61,36 @@
 			<!--=====================================================
 				Menu
 			=====================================================-->
-			<div class='menu' >
+			<div class='menu' id="mySidenav">
 				<div class='inner' >
 					<ul class='menu-items' >
-						
 						<li>
-							<a href='#' class='section-toggle' data-section='intro' >
+							<a href='#' class='section-toggle' data-section='intro'  onclick="closeNav()">
 								Home
 							</a>
 						</li>
 						
 						<li>
-							<a href='#about' class='section-toggle' data-section='about' >
+							<a href='#about' class='section-toggle' data-section='about' onclick="closeNav()">
 								About
 							</a>
 						</li>
 						
 						<li>
-							<a href='#resume' class='section-toggle' data-section='resume' >
+							<a href='#resume' class='section-toggle' data-section='resume' onclick="closeNav()">
 								Resume
 							</a>
 						</li>
 						
 						<li>
-							<a href='#portfolio' class='section-toggle' data-section='portfolio' >
+							<a href='#portfolio' class='section-toggle' data-section='portfolio' onclick="closeNav()">
 								Projects
 							</a>
 						</li>
 						
 						
 						<li>
-							<a href='#contact' class='section-toggle' data-section='contact' >
+							<a href='#contact' class='section-toggle' data-section='contact' onclick="closeNav()">
 								Contact
 							</a>
 						</li>
@@ -101,6 +100,19 @@
 				</div>
 			</div>
 			
+
+
+			<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "300px";
+			}
+			function closeNav() {
+			  document.getElementById("mySidenav").style.width = "0px";
+			}
+			</script>
+
+
+
 			<div class='animation-block' ></div>
 			
 			
